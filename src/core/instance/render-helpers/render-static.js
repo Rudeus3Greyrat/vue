@@ -9,7 +9,7 @@ export function renderStatic (
   index: number,
   isInFor?: boolean
 ): VNode | Array<VNode> {
-  // static trees can be rendered once and cached on the contructor options
+  // static trees can be rendered once and cached on the constructor options
   // so every instance shares the same cached trees
   const renderFns = this.$options.staticRenderFns
   const cached = renderFns.cached || (renderFns.cached = [])
