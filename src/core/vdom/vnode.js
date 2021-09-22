@@ -26,7 +26,7 @@ export default class VNode {
   ssrContext: Object | void;
   functionalContext: Component | void; // real context vm for functional nodes
   functionalOptions: ?ComponentOptions; // for SSR caching
-  functionalScopeId: ?string; // functioanl scope id support
+  functionalScopeId: ?string; // functional scope id support
 
   constructor (
     tag?: string,
